@@ -134,6 +134,10 @@ nav a:hover {
   border-radius: var(--border-radius);
 }
 
+.text-bold {
+  font-weight: bold;
+}
+
 /* CARDS */
 .card {
   margin: 0 0 20px 0;
