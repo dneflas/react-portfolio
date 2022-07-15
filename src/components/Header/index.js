@@ -4,7 +4,10 @@ import Nav from "../Navigation";
 function Header({ currentSection, setCurrentSection }) {
   return (
     <header>
-      <div className="container flex-row justify-space-between align-center pt-3">
+      <div
+        data-testid="title"
+        className="container flex-row justify-space-between align-center pt-3"
+      >
         <h1 className="page-title py-2 px-3">Debbie Neflas</h1>
         <Nav
           currentSection={currentSection}

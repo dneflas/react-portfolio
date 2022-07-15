@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders matches snapshot 1`] = `
+<DocumentFragment>
+  <header>
+    <div
+      class="container flex-row justify-space-between align-center pt-3"
+      data-testid="title"
+    >
+      <h1
+        class="page-title py-2 px-3"
+      >
+        Debbie Neflas
+      </h1>
+      <nav
+        class="flex-row"
+      >
+        <a
+          class="ml-2 my-1 px-2 mx-5 py-1 text-dark false"
+          data-testid="about"
+          href="#about"
+        >
+          About Me
+        </a>
+        <a
+          class="ml-2 my-1 px-2 mx-5 py-1 text-dark false"
+          data-testid="portfolio"
+          href="#portfolio"
+        >
+          Portfolio
+        </a>
+        <a
+          class="ml-2 my-1 px-2 mx-5 py-1 text-dark false"
+          data-testid="contact"
+          href="#contact"
+        >
+          Contact
+        </a>
+        <a
+          class="ml-2 my-1 px-2 mx-5 py-1 text-dark false"
+          data-testid="resume"
+          href="#resume"
+        >
+          Resume
+        </a>
+      </nav>
+    </div>
+  </header>
+</DocumentFragment>
+`;

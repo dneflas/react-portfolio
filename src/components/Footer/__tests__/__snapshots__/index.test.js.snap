@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer components render matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="flex-row justify-space-between my-3"
+  >
+    <div
+      class="col-md-4 col-lg-2 text-center"
+    >
+      <a
+        class="ml-2 my-1 px-2 py-1 text-dark"
+        href="mailto:debbieneflas@gmail.com"
+      >
+        <i
+          class="fa-solid fa-envelope"
+        />
+      </a>
+    </div>
+    <div
+      class="col-md-4 col-lg-2 text-center"
+    >
+      <a
+        class="ml-2 my-1 px-2 py-1 text-dark"
+        href="tel:+16263771363"
+      >
+        <i
+          class="fa-solid fa-phone"
+        />
+      </a>
+    </div>
+    <div
+      class="col-md-4 col-lg-2 text-center"
+    >
+      <a
+        class="ml-2 my-1 px-2 py-1 text-dark"
+        href="https://github.com/dneflas"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <i
+          class="fa-brands fa-github"
+        />
+      </a>
+    </div>
+    <div
+      class="col-md-4 col-lg-2 text-center"
+    >
+      <a
+        class="ml-2 my-1 px-2 py-1 text-dark"
+        href="https://www.linkedin.com/in/debbieneflas/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <i
+          class="fa-brands fa-linkedin"
+        />
+      </a>
+    </div>
+    <div
+      class="col-md-4 col-lg-2 text-center"
+    >
+      <a
+        class="ml-2 my-1 px-2 py-1 text-dark"
+        href="https://stackoverflow.com/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <i
+          class="fa-brands fa-stack-overflow"
+        />
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
