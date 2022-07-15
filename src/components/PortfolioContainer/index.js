@@ -9,12 +9,7 @@ function PortfolioContainer({ currentSection }) {
     }
   };
 
-  return (
-    <main>
-      <h1>This is the portfolio container section</h1>
-      {renderSection()}
-    </main>
-  );
+  return <main>{renderSection()}</main>;
 }
 
 export default PortfolioContainer;

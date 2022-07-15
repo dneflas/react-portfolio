@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About components render matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="my-5"
+    id="about"
+  >
+    <h5
+      class="text-center my-5 py-5"
+    >
+      Hi, I'm Debbie - A full-stack web developer based in Culver City, CA
+    </h5>
+  </section>
+</DocumentFragment>
+`;
