@@ -134,8 +134,13 @@ nav a:hover {
   border-radius: var(--border-radius);
 }
 
-.text-bold {
+.nav-active {
   font-weight: bold;
+  text-shadow: 0 0 10px var(--primary);
+}
+
+.icons:hover {
+  text-shadow: 0 0 10px var(--primary);
 }
 
 /* CARDS */

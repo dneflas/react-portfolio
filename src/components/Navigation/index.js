@@ -5,7 +5,7 @@ function Nav({ currentSection, setCurrentSection }) {
     <nav className="flex-row">
       <a
         className={`ml-2 my-1 px-2 mx-5 py-1 text-dark ${
-          currentSection === "About" && "text-bold"
+          currentSection === "About" && "nav-active"
         }`}
         data-testid="about"
         onClick={() => setCurrentSection("About")}
@@ -15,7 +15,7 @@ function Nav({ currentSection, setCurrentSection }) {
       </a>
       <a
         className={`ml-2 my-1 px-2 mx-5 py-1 text-dark ${
-          currentSection === "Portfolio" && "text-bold"
+          currentSection === "Portfolio" && "nav-active"
         }`}
         data-testid="portfolio"
         onClick={() => setCurrentSection("Portfolio")}
@@ -25,7 +25,7 @@ function Nav({ currentSection, setCurrentSection }) {
       </a>
       <a
         className={`ml-2 my-1 px-2 mx-5 py-1 text-dark ${
-          currentSection === "Contact" && "text-bold"
+          currentSection === "Contact" && "nav-active"
         }`}
         data-testid="contact"
         onClick={() => setCurrentSection("Contact")}
@@ -35,7 +35,7 @@ function Nav({ currentSection, setCurrentSection }) {
       </a>
       <a
         className={`ml-2 my-1 px-2 mx-5 py-1 text-dark ${
-          currentSection === "Resume" && "text-bold"
+          currentSection === "Resume" && "nav-active"
         }`}
         data-testid="resume"
         onClick={() => setCurrentSection("Resume")}
