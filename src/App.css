@@ -122,12 +122,22 @@ nav a:hover {
   display: inline;
 }
 
-#contact a {
-  font-size: 1.5rem;
+.icons {
+  font-size: 1.25rem;
 }
 
-#contact a:hover {
-  font-weight: bold;
+.projects {
+  min-height: 400px;
+  border: 1px solid var(--secondary);
+}
+/* 
+.projects:hover {
+  backdrop-filter: blur(30px);
+} */
+
+.project-content {
+  min-height: 366px;
+  backdrop-filter: blur(30px);
 }
 
 .border-round {

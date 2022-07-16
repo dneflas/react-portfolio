@@ -29,7 +29,7 @@ function Footer() {
     },
   ]);
   return (
-    <div className="flex-row justify-space-between my-3 container" id="contact">
+    <div className="flex-row justify-space-between my-3 container">
       {contactLinks.map((link) => (
         <div className="col-md-4 col-lg-2 text-center" key={link.name}>
           <a

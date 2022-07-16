@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 function Project() {
+  const [isProjectHover, setIsProjectHover] = useState();
   const [project] = useState([
     {
       title: "Artist Nation Press List",
@@ -46,35 +47,53 @@ function Project() {
       repo_link: "https://github.com/dneflas/the-tech-blog",
       deployed_link: "https://agile-inlet-69846.herokuapp.com/",
     },
+    {
+      title: "React Portfolio",
+      languages: "React, Node.js, JSX, CSS, Jest",
+      description: "A single page application built with React.",
+      repo_link: "https://github.com/dneflas/react-portfolio",
+      deployed_link: "https://dneflas.github.io/react-portfolio/",
+    },
   ]);
   return (
     <div className="flex-row justify-space-between">
       {project.map((project, i) => (
         <div
-          className="col-12 col-md-6 mb-2 bg-secondary text-dark p-3 flex-column border-round"
+          className="col-12 col-md-6 mb-2 bg-secondary text-dark p-3 flex-column border-round projects"
           key={project.title}
+          style={{
+            backgroundImage: `url(${require(`../../assets/${i}.png`)}) `,
+          }}
+          onMouseEnter={() => setIsProjectHover(i)}
+          onMouseLeave={() => setIsProjectHover()}
         >
-          <h3 className="portfolio-item-title text-dark">{project.title}</h3>
-          <h5 className="portfolio-languages">
-            Built With: {project.languages}
-          </h5>
-          <p>{project.description}</p>
-          <a
-            href={project.repo_link}
-            className="btn mt-auto"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-github mr-2"></i>View Project on GitHub
-          </a>
-          <a
-            href={project.deployed_link}
-            className="btn mt-0"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Deployed Application
-          </a>
+          {isProjectHover === i && (
+            <div className="px-2 pt-5 pb-4 flex-column project-content">
+              <h3 className="portfolio-item-title text-dark">
+                {project.title}
+              </h3>
+              <h5 className="portfolio-languages">
+                Built With: {project.languages}
+              </h5>
+              <p>{project.description}</p>
+              <a
+                href={project.repo_link}
+                className="btn mx-2 mt-auto"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-github mr-2"></i>View Project on GitHub
+              </a>
+              <a
+                href={project.deployed_link}
+                className="btn mx-2 mt-0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Deployed Application
+              </a>
+            </div>
+          )}
         </div>
       ))}
     </div>
