@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer components render matches snapshot 1`] = `
+<DocumentFragment>
+  <section>
+    <h2>
+      Contact Me
+    </h2>
+    <div
+      class="flex-row my-3"
+    >
+      <form
+        class="col-12 col-md-8"
+      >
+        <div
+          class="my-1"
+        >
+          <label
+            class="form-label"
+            for="Name"
+          >
+            Name: 
+          </label>
+          <input
+            class="form-input"
+            name="Name"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="my-1"
+        >
+          <label
+            class="form-label"
+            for="Email"
+          >
+            Email: 
+          </label>
+          <input
+            class="form-input"
+            name="Email"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="my-1"
+        >
+          <label
+            class="form-label"
+            for="Message"
+          >
+            Message: 
+          </label>
+          <textarea
+            class="form-textarea"
+            name="Message"
+            rows="8"
+          />
+        </div>
+        <button
+          class="btn my-1"
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
+      <div
+        class="col-12 col-md-4 align-center my-auto"
+      >
+        <div
+          class="col-2 text-center my-5"
+        >
+          <a
+            class="ml-2 my-1 px-2 py-1 text-dark icons"
+            href="mailto:debbieneflas@gmail.com"
+          >
+            <i
+              class="fa-solid fa-envelope"
+            />
+            <span>
+               : Email
+            </span>
+          </a>
+        </div>
+        <div
+          class="col-2 text-center my-5"
+        >
+          <a
+            class="ml-2 my-1 px-2 py-1 text-dark icons"
+            href="tel:+16263771363"
+          >
+            <i
+              class="fa-solid fa-phone"
+            />
+            <span>
+               : Phone
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

@@ -3,38 +3,10 @@
 exports[`Footer components render matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="flex-row justify-space-between my-3 container"
+    class="flex-row justify-center my-3 container"
   >
     <div
-      class="col-md-4 col-lg-2 text-center"
-    >
-      <a
-        class="ml-2 my-1 px-2 py-1 text-dark icons"
-        href="mailto:debbieneflas@gmail.com"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <i
-          class="fa-solid fa-envelope"
-        />
-      </a>
-    </div>
-    <div
-      class="col-md-4 col-lg-2 text-center"
-    >
-      <a
-        class="ml-2 my-1 px-2 py-1 text-dark icons"
-        href="tel:+16263771363"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <i
-          class="fa-solid fa-phone"
-        />
-      </a>
-    </div>
-    <div
-      class="col-md-4 col-lg-2 text-center"
+      class="col-2 text-center"
     >
       <a
         class="ml-2 my-1 px-2 py-1 text-dark icons"
@@ -48,7 +20,7 @@ exports[`Footer components render matches snapshot 1`] = `
       </a>
     </div>
     <div
-      class="col-md-4 col-lg-2 text-center"
+      class="col-2 text-center"
     >
       <a
         class="ml-2 my-1 px-2 py-1 text-dark icons"
@@ -62,7 +34,7 @@ exports[`Footer components render matches snapshot 1`] = `
       </a>
     </div>
     <div
-      class="col-md-4 col-lg-2 text-center"
+      class="col-2 text-center"
     >
       <a
         class="ml-2 my-1 px-2 py-1 text-dark icons"
