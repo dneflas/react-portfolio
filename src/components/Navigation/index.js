@@ -1,48 +1,49 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Nav({ currentSection, setCurrentSection }) {
   return (
     <nav className="flex-row">
-      <a
+      <Link
         className={`ml-2 my-1 px-2 mx-5 py-1 text-dark ${
           currentSection === "About" && "nav-active"
         }`}
         data-testid="about"
         onClick={() => setCurrentSection("About")}
-        href="#about"
+        to="/about"
       >
         About Me
-      </a>
-      <a
+      </Link>
+      <Link
         className={`ml-2 my-1 px-2 mx-5 py-1 text-dark ${
           currentSection === "Portfolio" && "nav-active"
         }`}
         data-testid="portfolio"
         onClick={() => setCurrentSection("Portfolio")}
-        href="#portfolio"
+        to="/portfolio"
       >
         Portfolio
-      </a>
-      <a
+      </Link>
+      <Link
         className={`ml-2 my-1 px-2 mx-5 py-1 text-dark ${
           currentSection === "Contact" && "nav-active"
         }`}
         data-testid="contact"
         onClick={() => setCurrentSection("Contact")}
-        href="#contact"
+        to="/contact"
       >
         Contact
-      </a>
-      <a
+      </Link>
+      <Link
         className={`ml-2 my-1 px-2 mx-5 py-1 text-dark ${
           currentSection === "Resume" && "nav-active"
         }`}
         data-testid="resume"
         onClick={() => setCurrentSection("Resume")}
-        href="#resume"
+        to="/resume"
       >
         Resume
-      </a>
+      </Link>
     </nav>
   );
 }
