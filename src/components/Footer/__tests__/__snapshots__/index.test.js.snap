@@ -3,14 +3,16 @@
 exports[`Footer components render matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="flex-row justify-space-between my-3"
+    class="flex-row justify-space-between my-3 container"
   >
     <div
       class="col-md-4 col-lg-2 text-center"
     >
       <a
-        class="ml-2 my-1 px-2 py-1 text-dark"
+        class="ml-2 my-1 px-2 py-1 text-dark icons"
         href="mailto:debbieneflas@gmail.com"
+        rel="noopener noreferrer"
+        target="_blank"
       >
         <i
           class="fa-solid fa-envelope"
@@ -21,8 +23,10 @@ exports[`Footer components render matches snapshot 1`] = `
       class="col-md-4 col-lg-2 text-center"
     >
       <a
-        class="ml-2 my-1 px-2 py-1 text-dark"
+        class="ml-2 my-1 px-2 py-1 text-dark icons"
         href="tel:+16263771363"
+        rel="noopener noreferrer"
+        target="_blank"
       >
         <i
           class="fa-solid fa-phone"
@@ -33,7 +37,7 @@ exports[`Footer components render matches snapshot 1`] = `
       class="col-md-4 col-lg-2 text-center"
     >
       <a
-        class="ml-2 my-1 px-2 py-1 text-dark"
+        class="ml-2 my-1 px-2 py-1 text-dark icons"
         href="https://github.com/dneflas"
         rel="noopener noreferrer"
         target="_blank"
@@ -47,7 +51,7 @@ exports[`Footer components render matches snapshot 1`] = `
       class="col-md-4 col-lg-2 text-center"
     >
       <a
-        class="ml-2 my-1 px-2 py-1 text-dark"
+        class="ml-2 my-1 px-2 py-1 text-dark icons"
         href="https://www.linkedin.com/in/debbieneflas/"
         rel="noopener noreferrer"
         target="_blank"
@@ -61,7 +65,7 @@ exports[`Footer components render matches snapshot 1`] = `
       class="col-md-4 col-lg-2 text-center"
     >
       <a
-        class="ml-2 my-1 px-2 py-1 text-dark"
+        class="ml-2 my-1 px-2 py-1 text-dark icons"
         href="https://stackoverflow.com/"
         rel="noopener noreferrer"
         target="_blank"

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import PortfolioContainer from "./components/PortfolioContainer";
@@ -6,6 +6,9 @@ import Footer from "./components/Footer";
 
 function App() {
   const [currentSection, setCurrentSection] = useState("About");
+  useEffect(() => {
+    document.title = `Debbie Neflas | ${currentSection}`;
+  });
 
   return (
     <div>

@@ -6,8 +6,20 @@ exports[`About components render matches snapshot 1`] = `
     class="my-5"
     id="about"
   >
+    <h2>
+       About Me
+    </h2>
+    <div
+      class="text-center"
+    >
+      <img
+        alt="headshot"
+        class="mt-5"
+        src="profile.png"
+      />
+    </div>
     <h5
-      class="text-center my-5 py-5"
+      class="text-center my-3 py-5"
     >
       Hi, I'm Debbie - A full-stack web developer based in Culver City, CA
     </h5>

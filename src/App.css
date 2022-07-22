@@ -74,7 +74,7 @@ a {
 
 header {
   background-color: var(--light);
-  position: sticky;
+  /* position: sticky; */
   top: 0;
 }
 

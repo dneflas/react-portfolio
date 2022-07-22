@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`projects render matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="flex-row justify-space-between"
+  >
+    <div
+      class="col-12 col-md-6 mb-2 bg-secondary text-dark p-3 flex-column border-round projects"
+      style="background-image: url(0.png);"
+    />
+    <div
+      class="col-12 col-md-6 mb-2 bg-secondary text-dark p-3 flex-column border-round projects"
+      style="background-image: url(1.png);"
+    />
+    <div
+      class="col-12 col-md-6 mb-2 bg-secondary text-dark p-3 flex-column border-round projects"
+      style="background-image: url(2.png);"
+    />
+    <div
+      class="col-12 col-md-6 mb-2 bg-secondary text-dark p-3 flex-column border-round projects"
+      style="background-image: url(3.png);"
+    />
+    <div
+      class="col-12 col-md-6 mb-2 bg-secondary text-dark p-3 flex-column border-round projects"
+      style="background-image: url(4.png);"
+    />
+    <div
+      class="col-12 col-md-6 mb-2 bg-secondary text-dark p-3 flex-column border-round projects"
+      style="background-image: url(5.png);"
+    />
+  </div>
+</DocumentFragment>
+`;
