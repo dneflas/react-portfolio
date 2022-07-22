@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { validateEmail } from "../../utils/helpers";
+import { validateEmail, capitalizeFirstLetter } from "../../utils/helpers";
 
 function ContactForm() {
   const [errorMessage, setErrorMessage] = useState("");
@@ -35,7 +35,9 @@ function ContactForm() {
       }
     } else {
       if (!event.target.value.length) {
-        setErrorMessage(`${event.target.name} is required.`);
+        setErrorMessage(
+          capitalizeFirstLetter(`${event.target.name} is required.`)
+        );
       } else {
         setErrorMessage("");
       }
@@ -58,7 +60,19 @@ function ContactForm() {
   return (
     <section className="my-5">
       <h2>Contact Me</h2>
-      <div className="flex-row my-3">
+      <div className="flex-row justify-center my-auto">
+        {contactLinks.map((link) => (
+          <div className=" mx-4 my-3" key={link.name}>
+            <a
+              href={link.link}
+              className="ml-2 my-1 px-2 py-1 text-dark large-icons"
+            >
+              <i className={link.icon}></i>
+            </a>
+          </div>
+        ))}
+      </div>
+      <div className="flex-row my-3 justify-center">
         <form className="col-12 col-md-8" onSubmit={handleSubmit}>
           <div className="my-1">
             <label className="form-label" htmlFor="Name">
@@ -105,19 +119,6 @@ function ContactForm() {
             Submit
           </button>
         </form>
-        <div className="col-12 col-md-4 align-center my-auto">
-          {contactLinks.map((link) => (
-            <div className="col-2 text-center my-4" key={link.name}>
-              <a
-                href={link.link}
-                className="ml-2 my-1 px-2 py-1 text-dark icons"
-              >
-                <i className={link.icon}></i>
-                <span> : {link.name}</span>
-              </a>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

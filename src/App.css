@@ -72,6 +72,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  font-weight: bold;
+}
+
 header {
   background-color: var(--light);
   /* position: sticky; */
@@ -152,8 +156,13 @@ nav a:hover {
   text-shadow: 0 0 10px var(--primary);
 }
 
-.icons:hover {
+.icons:hover,
+.large-icons:hover {
   text-shadow: 0 0 10px var(--primary);
+}
+
+.italic {
+  font-style: italic;
 }
 
 /* CARDS */
