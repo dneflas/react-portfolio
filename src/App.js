@@ -24,7 +24,7 @@ function App() {
         <main className="container">
           <Routes>
             <Route path="/react-portfolio">
-              <Route path="/about" element={<About />} />
+              <Route path="/react-portfolio/about" element={<About />} />
               <Route path="" element={<About />} />
             </Route>
             <Route path="/react-portfolio/portfolio" element={<Portfolio />} />
