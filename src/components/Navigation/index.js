@@ -10,7 +10,7 @@ function Nav({ currentSection, setCurrentSection }) {
         }`}
         data-testid="about"
         onClick={() => setCurrentSection("About")}
-        to="/about"
+        to="/react-portfolio/about"
       >
         About Me
       </Link>
@@ -20,7 +20,7 @@ function Nav({ currentSection, setCurrentSection }) {
         }`}
         data-testid="portfolio"
         onClick={() => setCurrentSection("Portfolio")}
-        to="/portfolio"
+        to="/react-portfolio/portfolio"
       >
         Portfolio
       </Link>
@@ -30,7 +30,7 @@ function Nav({ currentSection, setCurrentSection }) {
         }`}
         data-testid="contact"
         onClick={() => setCurrentSection("Contact")}
-        to="/contact"
+        to="/react-portfolio/contact"
       >
         Contact
       </Link>
@@ -40,7 +40,7 @@ function Nav({ currentSection, setCurrentSection }) {
         }`}
         data-testid="resume"
         onClick={() => setCurrentSection("Resume")}
-        to="/resume"
+        to="/react-portfolio/resume"
       >
         Resume
       </Link>

@@ -23,13 +23,13 @@ function App() {
         ></Header>
         <main className="container">
           <Routes>
-            <Route path="/">
+            <Route path="/react-portfolio">
               <Route path="/about" element={<About />} />
               <Route path="" element={<About />} />
             </Route>
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/contact" element={<ContactForm />} />
-            <Route path="/resume" element={<Resume />} />
+            <Route path="/react-portfolio/portfolio" element={<Portfolio />} />
+            <Route path="/react-portfolio/contact" element={<ContactForm />} />
+            <Route path="/react-portfolio/resume" element={<Resume />} />
           </Routes>
         </main>
 
