@@ -1,21 +1,18 @@
 import React from "react";
-import resume from "../../assets/file.pdf";
+import resume from "../../assets/resume.pdf";
 
 function Resume() {
   return (
     <section className="my-5">
       <h2>Resume</h2>
-      <a href={resume} download>
+      <a href={resume} download="Debbie_Neflas_CV.pdf">
         Download Resume
       </a>
       <p className="my-5">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        Full-stack web developer, with recent Coding Bootcamp completion
+        certificate. Experience building MERN stack applications. Highly
+        analytical, motivated and skilled at solving programming problems. Work
+        well both independently and in a team environment.
       </p>
       <h5>Frontend:</h5>
       <p>HTML5, CSS, Responsive Design, Javascript, jQuery, Bootstrap, AJAX </p>
