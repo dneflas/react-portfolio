@@ -23,6 +23,7 @@ React Portfolio is a single page application (SPA) that interacts with the brows
 - [Usage](#usage)
 - [License](#license)
 - [Tests](#tests)
+- [Deployed Link](#deployed-link)
 - [Questions](#questions)  
   <br>
 
@@ -44,6 +45,8 @@ npm run build
 
 ## Usage
 
+![screenshot](./src/assets/screenshot.png)
+
 React Portfolio is used to share and showcase information on the developer, projects and work, contact information, and resume information. The application has a header with navigation, and a footer that contains links to Github, LinkedIn and StackOverflow. The "About Me" section contains a photo or avatar and brand statement of the developer. The "Portfolio" section contains projects and includes, the project name, description, and image, and links to both the Github repository and the deployed application. The "Contact" section contains links to email and phone, and a contact form. The "Resume" section contains a brief career summary along with backend and front end proficiencies and a link to download a resume PDF.
 
 <br>
@@ -62,6 +65,12 @@ npm run test
 ```
 
   <br>
+
+## Deployed Link
+
+https://dneflas.github.io/react-portfolio/
+
+</br>
 
 ## Questions
 
