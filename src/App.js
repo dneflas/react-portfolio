@@ -9,7 +9,11 @@ import Resume from "./components/Resume";
 import Footer from "./components/Footer";
 
 function App() {
-  const [currentSection, setCurrentSection] = useState("About");
+  const initialSection = window.location.toString().split("/")[
+    window.location.toString().split("/").length - 1
+  ];
+
+  const [currentSection, setCurrentSection] = useState(initialSection);
   useEffect(() => {
     document.title = `Debbie Neflas | ${currentSection}`;
   });

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { validateEmail, capitalizeFirstLetter } from "../../utils/helpers";
+import { send } from "@emailjs/browser";
 
 function ContactForm() {
   const [errorMessage, setErrorMessage] = useState("");
+  const [emailSent, setEmailSent] = useState(false);
 
   const [formState, setFormState] = useState({
     name: "",
@@ -23,40 +25,56 @@ function ContactForm() {
     },
   ]);
 
-  const { name, email, message } = formState;
-
   function handleChange(event) {
-    if (event.target.name === "Email") {
-      const isValid = validateEmail(event.target.value);
+    const { name, value } = event.target;
+    if (name === "email") {
+      const isValid = validateEmail(value);
       if (!isValid) {
         setErrorMessage("Your email is invalid");
       } else {
         setErrorMessage("");
       }
     } else {
-      if (!event.target.value.length) {
-        setErrorMessage(
-          capitalizeFirstLetter(`${event.target.name} is required.`)
-        );
+      if (!value.length) {
+        setErrorMessage(capitalizeFirstLetter(`${name} is required.`));
       } else {
         setErrorMessage("");
       }
     }
     if (!errorMessage) {
-      setFormState({ ...formState, [event.target.name]: event.target.value });
+      setFormState({ ...formState, [name]: value });
     }
+    console.log(formState);
   }
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(formState);
+
+    send(
+      "default_service",
+      "template_paa5ipo",
+      formState,
+      "46V0eFry4B4d0hEHE"
+    ).then(
+      (response) => {
+        console.log("SUCCESS", response.status, response.text);
+        setEmailSent(true);
+      },
+      (error) => {
+        console.log("FAILED...", error);
+        setErrorMessage("Something went wrong!");
+      }
+    );
 
     setFormState({
       name: "",
       email: "",
       message: "",
     });
+    console.log(formState);
   }
+
+  const { name, email, message } = formState;
   return (
     <section className="my-5">
       <h2>Contact Me</h2>
@@ -72,54 +90,73 @@ function ContactForm() {
           </div>
         ))}
       </div>
-      <div className="flex-row my-3 justify-center">
-        <form className="col-12 col-md-8" onSubmit={handleSubmit}>
-          <div className="my-1">
-            <label className="form-label" htmlFor="Name">
-              Name:{" "}
-            </label>
-            <input
-              className="form-input"
-              type="text"
-              name="name"
-              defaultValue={name}
-              onBlur={handleChange}
-            />
-          </div>
-          <div className="my-1">
-            <label className="form-label" htmlFor="Email">
-              Email:{" "}
-            </label>
-            <input
-              className="form-input"
-              type="text"
-              name="email"
-              defaultValue={email}
-              onBlur={handleChange}
-            />
-          </div>
-          <div className="my-1">
-            <label className="form-label" htmlFor="Message">
-              Message:{" "}
-            </label>
-            <textarea
-              className="form-textarea"
-              name="message"
-              rows="8"
-              defaultValue={message}
-              onBlur={handleChange}
-            />
-          </div>
-          {errorMessage && (
-            <div>
-              <p>{errorMessage}</p>
+      {emailSent ? (
+        <>
+          <div className="flex-row my-3 justify-center">
+            <div className="col-12 col-md-8 my-5 text-center">
+              <p>
+                Thanks, your form has been submitted. Hope to speak with you
+                soon!
+              </p>
+              <button
+                onClick={() => setEmailSent(false)}
+                className="btn my-5 w-25"
+              >
+                Back to Contact Form
+              </button>
             </div>
-          )}
-          <button className="btn my-1" type="submit">
-            Submit
-          </button>
-        </form>
-      </div>
+          </div>
+        </>
+      ) : (
+        <div className="flex-row my-3 justify-center">
+          <form className="col-12 col-md-8" onSubmit={handleSubmit}>
+            {errorMessage && (
+              <div>
+                <p className="text-tertiary">{errorMessage}</p>
+              </div>
+            )}
+            <div className="my-1">
+              <label className="form-label" htmlFor="name">
+                Name:{" "}
+              </label>
+              <input
+                className="form-input"
+                type="text"
+                name="name"
+                defaultValue={name}
+                onBlur={handleChange}
+              />
+            </div>
+            <div className="my-1">
+              <label className="form-label" htmlFor="email">
+                Email:{" "}
+              </label>
+              <input
+                className="form-input"
+                type="text"
+                name="email"
+                defaultValue={email}
+                onBlur={handleChange}
+              />
+            </div>
+            <div className="my-1">
+              <label className="form-label" htmlFor="message">
+                Message:{" "}
+              </label>
+              <textarea
+                className="form-textarea"
+                name="message"
+                rows="8"
+                defaultValue={message}
+                onBlur={handleChange}
+              />
+            </div>
+            <button className="btn my-1" type="submit">
+              Submit
+            </button>
+          </form>
+        </div>
+      )}
     </section>
   );
 }

@@ -9,7 +9,7 @@ function Header({ currentSection, setCurrentSection }) {
         data-testid="title"
         className="container flex-row justify-space-between align-center pt-3"
       >
-        <Link to="/react-portfolio">
+        <Link to="/react-portfolio" onClick={() => setCurrentSection("")}>
           <h1 className="page-title py-2 px-3">Debbie Neflas</h1>
         </Link>
         <Nav
