@@ -14,6 +14,7 @@ React Portfolio is a single page application (SPA) that interacts with the brows
 - Jest package
 - Gh-pages package
 - Create React App package
+- EmailJS package
 
 <br>
 
