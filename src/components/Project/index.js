@@ -8,7 +8,7 @@ function Project() {
       languages:
         "Javascript, Node.js, MySQL, Express Package, Sequelize Package, Handlebars, Express Sessions, Connect Session Sequelize, Dotenv package, Bcrypt Package, Casual Package",
       description:
-        " a full-stack application for Artist Nation to comprise and manage a press list",
+        "a full-stack application for Artist Nation to comprise and manage a press list. (username: debbie, password: password123) ",
       repo_link: "https://github.com/sammylwolfson/artistnation-presslist",
       deployed_link: "https://artistnation-presslist.herokuapp.com/",
     },
