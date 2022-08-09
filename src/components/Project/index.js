@@ -4,13 +4,24 @@ function Project() {
   const [isProjectHover, setIsProjectHover] = useState();
   const [project] = useState([
     {
+      title: "DEJA Imp",
+      languages:
+        "React, GraphQL, Express, Node.js, JSX, CSS, MongoDB, Mongoose ODM, JSON Web Tokens, Apollo Client, Bcrypt, Faker-js ",
+      description:
+        "A single-page MERN Stack application for inventory management, built for a local business.",
+      repo_link: "https://github.com/edellenator/Deja-imp",
+      deployed_link: "https://github.com/edellenator/Deja-imp",
+      image: "5.png",
+    },
+    {
       title: "Artist Nation Press List",
       languages:
         "Javascript, Node.js, MySQL, Express Package, Sequelize Package, Handlebars, Express Sessions, Connect Session Sequelize, Dotenv package, Bcrypt Package, Casual Package",
       description:
-        "a full-stack application for Artist Nation to comprise and manage a press list. (username: debbie, password: password123) ",
+        "a full-stack application for Artist Nation to comprise and manage a press list. (username: guest, password: P@ssword123) ",
       repo_link: "https://github.com/sammylwolfson/artistnation-presslist",
       deployed_link: "https://artistnation-presslist.herokuapp.com/",
+      image: "0.png",
     },
     {
       title: "CAT ME",
@@ -20,6 +31,7 @@ function Project() {
         "A front end application that allows users to get and favorite random photos and facts about cats.",
       repo_link: "https://github.com/sammylwolfson/cat-me",
       deployed_link: "https://sammylwolfson.github.io/cat-me/",
+      image: "1.png",
     },
     {
       title: "Weather Dashboard",
@@ -29,6 +41,7 @@ function Project() {
         "An application that allows users to input a city and see the current weather conditions, along with a 5-day forecast.",
       repo_link: "https://github.com/dneflas/weather-dashboard",
       deployed_link: "https://dneflas.github.io/weather-dashboard/",
+      image: "2.png",
     },
     {
       title: "Code Quiz",
@@ -37,6 +50,7 @@ function Project() {
         "A timed quiz application that stores high scores, featuring dynamically updated HTML.",
       repo_link: "https://github.com/dneflas/code-quiz",
       deployed_link: "https://dneflas.github.io/code-quiz/",
+      image: "3.png",
     },
     {
       title: "The Tech Blog",
@@ -46,13 +60,7 @@ function Project() {
         "A full-stack CMS-style blog that allows users to read, write, edit blog posts and leave comments.",
       repo_link: "https://github.com/dneflas/the-tech-blog",
       deployed_link: "https://agile-inlet-69846.herokuapp.com/",
-    },
-    {
-      title: "React Portfolio",
-      languages: "React, Node.js, JSX, CSS, Jest",
-      description: "A single page application built with React.",
-      repo_link: "https://github.com/dneflas/react-portfolio",
-      deployed_link: "https://dneflas.github.io/react-portfolio/",
+      image: "4.png",
     },
   ]);
   return (
@@ -62,7 +70,7 @@ function Project() {
           className="col-12 col-md-6 mb-2 bg-secondary text-dark p-3 flex-column border-round projects"
           key={project.title}
           style={{
-            backgroundImage: `url(${require(`../../assets/${i}.png`)}) `,
+            backgroundImage: `url(${require(`../../assets/${project.image}`)}) `,
           }}
           onMouseEnter={() => setIsProjectHover(i)}
           onMouseLeave={() => setIsProjectHover()}

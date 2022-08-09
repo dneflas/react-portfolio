@@ -12,13 +12,15 @@ function About() {
         Hi, I'm Debbie - A full-stack web developer based in Culver City, CA
       </h5>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        A full-stack web developer with a recently earned certificate in
+        full-stack development from UCLA Extensions. I am Javascript-fluent with
+        developed skills in Node.js, React.js, and mobile-first responsive
+        design, with an eye for catching details. I have experience building
+        single-page MERN stack applications. I’ve worked on teams of four to
+        develop an inventory management application and a press-list management
+        application for local businesses. I am looking forward to joining a
+        quality-driven team to approach programming challenges from different
+        angles, and to engage in meaningful development.
       </p>
     </section>
   );
