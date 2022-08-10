@@ -29,7 +29,7 @@ function Footer() {
     },
   ]);
   return (
-    <div className="flex-row justify-center my-3 container">
+    <div className="flex-row justify-center mt-3 mb-5 container">
       {contactLinks.map((link) => (
         <div className="col-2 text-center" key={link.name}>
           <a

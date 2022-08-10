@@ -10,7 +10,7 @@ function Project() {
       description:
         "A single-page MERN Stack application for inventory management, built for a local business.",
       repo_link: "https://github.com/edellenator/Deja-imp",
-      deployed_link: "https://github.com/edellenator/Deja-imp",
+      deployed_link: "https://deja-imp.herokuapp.com/",
       image: "5.png",
     },
     {
@@ -86,7 +86,7 @@ function Project() {
               <p>{project.description}</p>
               <a
                 href={project.repo_link}
-                className="btn mx-2 mt-auto"
+                className="btn w-50 text-center mt-auto"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -94,7 +94,7 @@ function Project() {
               </a>
               <a
                 href={project.deployed_link}
-                className="btn mx-2 mt-0"
+                className="btn w-50 mt-0 text-center"
                 target="_blank"
                 rel="noopener noreferrer"
               >
