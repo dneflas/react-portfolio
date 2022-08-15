@@ -17,11 +17,13 @@ function ContactForm() {
       name: "Email",
       link: "mailto:debbieneflas@gmail.com",
       icon: "fa-solid fa-envelope",
+      text: "debbieneflas@gmail.com",
     },
     {
       name: "Phone",
       link: "tel:+16263771363",
       icon: "fa-solid fa-phone",
+      text: "626.377.1363",
     },
   ]);
 
@@ -85,7 +87,7 @@ function ContactForm() {
               href={link.link}
               className="ml-2 my-1 px-2 py-1 text-dark large-icons"
             >
-              <i className={link.icon}></i>
+              <i className={link.icon}></i> : {link.text}
             </a>
           </div>
         ))}
@@ -95,8 +97,8 @@ function ContactForm() {
           <div className="flex-row my-3 justify-center">
             <div className="col-12 col-md-8 my-5 text-center">
               <p>
-                Thanks, your form has been submitted. Hope to speak with you
-                soon!
+                Thanks, your form has been submitted. I look forward to
+                connecting soon!
               </p>
               <button
                 onClick={() => setEmailSent(false)}
