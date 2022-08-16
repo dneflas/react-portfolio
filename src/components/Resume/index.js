@@ -15,12 +15,12 @@ function Resume() {
         well both independently and in a team environment.
       </p>
       <h5>Frontend:</h5>
-      <p>HTML5, CSS, Responsive Design, Javascript, jQuery, Bootstrap, AJAX </p>
-      <h5>Backend:</h5>
       <p>
-        MySQL, ORM, MongoDB, Express, ReactJS, Node, Handlebars, GraphQL,
-        Webpack
+        ReactJS, HTML5, CSS, Responsive Design, Javascript, jQuery, Bootstrap,
+        AJAX{" "}
       </p>
+      <h5>Backend:</h5>
+      <p>MySQL, ORM, MongoDB, Express, Node, Handlebars, GraphQL, Webpack</p>
       <h5>Education:</h5>
       <p>
         Full-Stack Coding Bootcamp,{" "}
