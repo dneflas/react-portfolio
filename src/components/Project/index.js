@@ -20,7 +20,7 @@ function Project() {
       description:
         "a full-stack application for Artist Nation to comprise and manage a press list. (username: guest, password: P@ssword123) ",
       repo_link: "https://github.com/sammylwolfson/artistnation-presslist",
-      deployed_link: "https://artistnation-presslist.herokuapp.com/",
+      deployed_link: "https://agile-refuge-70111.herokuapp.com/",
       image: "0.png",
     },
     {
