@@ -5,7 +5,7 @@ function Resume() {
   return (
     <section className="my-5">
       <h2>Resume</h2>
-      <a href={resume} download="Debbie_Neflas_CV.pdf">
+      <a href={resume} download="Debbie_Neflas.pdf">
         Download Resume
       </a>
       <p className="my-5">
