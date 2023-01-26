@@ -3,15 +3,20 @@ import profilePic from "../../assets/profile.png";
 
 function About() {
   return (
-    <section className="my-5" id="about">
-      <h2> About Me</h2>
-      <div className="text-center">
-        <img src={profilePic} className="mt-5" alt="headshot" />
+    <section className=" card" id="about">
+      <div className="text-center flex-row px-3 justify-space-around">
+        <img
+          src={profilePic}
+          className="my-4 col-2"
+          alt="headshot"
+          width="100px"
+        />
+        <h5 className="my-auto px-auto col-9">
+          Hi, I'm Debbie - A full-stack web developer based in Culver City, CA
+        </h5>
       </div>
-      <h5 className="text-center my-3 pt-5 pb-3">
-        Hi, I'm Debbie - A full-stack web developer based in Culver City, CA
-      </h5>
-      <p>
+
+      <p className="px-3">
         A full-stack web developer with a recently earned certificate in
         full-stack development from UCLA Extensions. I am Javascript-fluent with
         developed skills in Node.js, React.js, and mobile-first responsive

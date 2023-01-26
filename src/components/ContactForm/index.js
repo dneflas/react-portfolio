@@ -83,10 +83,7 @@ function ContactForm() {
       <div className="flex-row justify-center my-auto">
         {contactLinks.map((link) => (
           <div className=" mx-4 my-3" key={link.name}>
-            <a
-              href={link.link}
-              className="ml-2 my-1 px-2 py-1 text-dark large-icons"
-            >
+            <a href={link.link} className="ml-2 my-1 px-2 py-1 text-dark icons">
               <i className={link.icon}></i> : {link.text}
             </a>
           </div>

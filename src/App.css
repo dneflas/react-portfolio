@@ -1,7 +1,7 @@
 :root {
-  --primary: #9dbdc6;
-  --secondary: #daeaef;
-  --tertiary: #ff3d2e;
+  --primary: #f7ceeb;
+  --secondary: #fbeff7;
+  --tertiary: #f099d8;
   --light: #ffffff;
   --dark: #000;
   --border-radius: 0.3rem;
@@ -120,7 +120,7 @@ nav a:hover {
 
 .btn:hover {
   color: var(--dark);
-  background-color: var(--light);
+  background-color: var(--tertiary);
 }
 
 .btn-inline {
@@ -138,14 +138,17 @@ nav a:hover {
   min-height: 400px;
   border: 1px solid var(--secondary);
 }
-/* 
-.projects:hover {
-  backdrop-filter: blur(30px);
-} */
+
+.project-hover {
+  min-height: 400px;
+  border: 2px solid #000;
+  box-shadow: 20px 20px var(--secondary), 20px 20px 0px 2px var(--dark),
+    40px 40px var(--tertiary), 40px 40px 0px 2px var(--dark);
+  z-index: 999;
+}
 
 .project-content {
   min-height: 366px;
-  backdrop-filter: blur(30px);
 }
 
 .border-round {
@@ -168,14 +171,15 @@ nav a:hover {
 
 /* CARDS */
 .card {
-  margin: 0 0 20px 0;
-  border: 3px solid var(--dark);
-  border-radius: var(--border-radius);
+  margin: 10%;
+  border: 2px solid #000;
+  box-shadow: 20px 20px var(--secondary), 20px 20px 0px 2px var(--dark),
+    40px 40px var(--tertiary), 40px 40px 0px 2px var(--dark);
 }
 
 .card-header {
-  color: var(--primary);
-  background-color: var(--dark);
+  color: var(--dark);
+  /* background-color: var(--secondary); */
   padding: 2.5%;
   border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
 }

@@ -67,11 +67,17 @@ function Project() {
     <div className="flex-row justify-space-between">
       {project.map((project, i) => (
         <div
-          className="col-12 col-md-6 mb-2 bg-secondary text-dark p-3 flex-column border-round projects"
+          className={`col-12 col-md-6 mb-2 bg-secondary text-dark p-3 flex-column projects ${
+            isProjectHover === i && "project-hover bg-light"
+          }`}
           key={project.title}
-          style={{
-            backgroundImage: `url(${require(`../../assets/${project.image}`)}) `,
-          }}
+          style={
+            isProjectHover === i
+              ? { backgroundImage: "none" }
+              : {
+                  backgroundImage: `url(${require(`../../assets/${project.image}`)}) `,
+                }
+          }
           onMouseEnter={() => setIsProjectHover(i)}
           onMouseLeave={() => setIsProjectHover()}
         >
