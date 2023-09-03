@@ -16,8 +16,8 @@ function About() {
         </h5>
       </div>
 
-      <p className="px-3">
-        A full-stack web developer with a recently earned certificate in
+      <p className="px-3 text-center">
+        {/* A full-stack web developer with a recently earned certificate in
         full-stack development from UCLA Extensions. I am Javascript-fluent with
         developed skills in Node.js, React.js, and mobile-first responsive
         design, with an eye for catching details. I have experience building
@@ -25,7 +25,27 @@ function About() {
         develop an inventory management application and a press-list management
         application for local businesses. I am looking forward to joining a
         quality-driven team to approach programming challenges from different
-        angles, and to engage in meaningful development.
+        angles, and to engage in meaningful development. */}
+        I am a dedicated and passionate full-stack web developer, equipped with
+        a recent certificate in full-stack development from UCLA Extensions. My
+        journey in the world of web development has been driven by a profound
+        understanding of JavaScript, a language I am fluent in, and a commitment
+        to honing my skills in Node.js, React.js, and mobile-first responsive
+        design. My meticulous attention to detail ensures that every project I
+        undertake is executed with precision. I have honed my expertise in
+        crafting single-page applications using the MERN stack, consistently
+        delivering robust and user-friendly solutions. In my previous
+        experiences, I thrived within collaborative teams to create impactful
+        applications, such as an inventory management system and a press-list
+        management tool, both tailored to local businesses' needs. These
+        experiences have not only enhanced my technical skills but also nurtured
+        my ability to work effectively with others. I am eager to bring my
+        passion for programming and my diverse skill set to a quality-driven
+        team. I relish the prospect of tackling programming challenges from
+        various perspectives and contributing to meaningful software development
+        projects that make a real difference. If you're seeking a dedicated and
+        skilled full-stack developer to join your team, I'm excited to be
+        considered for the opportunity.
       </p>
     </section>
   );
