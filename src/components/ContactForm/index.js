@@ -19,12 +19,12 @@ function ContactForm() {
       icon: "fa-solid fa-envelope",
       text: "debbieneflas@gmail.com",
     },
-    {
-      name: "Phone",
-      link: "tel:+16263771363",
-      icon: "fa-solid fa-phone",
-      text: "626.377.1363",
-    },
+    // {
+    //   name: "Phone",
+    //   link: "tel:+16263771363",
+    //   icon: "fa-solid fa-phone",
+    //   text: "626.377.1363",
+    // },
   ]);
 
   function handleChange(event) {
