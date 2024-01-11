@@ -1,22 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
+
 import profilePic from "../../assets/profile.png";
 
 function About() {
+  const [showMore, setShowMore] = useState(false);
+
   return (
-    <section className=" card" id="about">
-      <div className="text-center flex-row px-3 justify-space-around">
+    <section className="text-light" id="about">
+      <div className=" flex-row px-3 py-5 justify-space-around">
+        <div className="my-auto px-auto col-7">
+          <h1 className="intro">Hi, I'm Debbie...</h1>
+          <h5>A full-stack web developer based in Culver City, CA</h5>
+          <button
+            onClick={() => setShowMore(true)}
+            className={`btn ${showMore === true && "display-none"}`}
+          >
+            Read More
+          </button>
+        </div>
         <img
           src={profilePic}
-          className="my-4 col-2"
+          className="my-4 col-4"
           alt="headshot"
           width="100px"
         />
-        <h5 className="my-auto px-auto col-9">
-          Hi, I'm Debbie - A full-stack web developer based in Culver City, CA
-        </h5>
       </div>
 
-      <p className="px-3 text-center">
+      <p
+        className={`px-3 text-center ${showMore === false && "display-none"}`}
+        id="about-text"
+      >
         {/* A full-stack web developer with a recently earned certificate in
         full-stack development from UCLA Extensions. I am Javascript-fluent with
         developed skills in Node.js, React.js, and mobile-first responsive

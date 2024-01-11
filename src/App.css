@@ -1,15 +1,29 @@
+@font-face {
+  font-family: "rocaTwoRegular";
+  src: local("rocaTwoRegular"),
+    url("./assets/rocaTwoRegular.ttf") format("trueType");
+}
+
+@font-face {
+  font-family: "rocaOneBlack";
+  src: local("rocaOneBlack"),
+    url("./assets/rocaOneBlack.ttf") format("trueType");
+}
+
 :root {
   --primary: #f7ceeb;
   --secondary: #fbeff7;
   --tertiary: #f099d8;
-  --light: #ffffff;
-  --dark: #000;
+  --light: #eeecde;
+  --dark: #156669;
   --border-radius: 0.3rem;
   --spacing-one: calc(1rem * 0.25);
   --spacing-two: calc(1rem * 0.5);
   --spacing-three: 1rem;
   --spacing-four: calc(1rem * 1.5);
   --spacing-five: calc(1rem * 3);
+  --primary-font: "rocaOneBlack";
+  --secondary-font: "Montserrat", sans-serif;
 }
 
 * {
@@ -20,7 +34,7 @@ body {
   background-color: var(--light);
   margin: 0;
   padding: 0;
-  font-family: "Public Sans", sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 300;
   color: var(--dark);
   line-height: 1.5;
@@ -33,14 +47,15 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: var(--primary-font);
   font-weight: 500;
   margin: 5px 0;
-  color: var(--dark);
+  /* color: var(--dark); */
   line-height: 1.25;
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 4rem;
 }
 
 h2 {
@@ -77,12 +92,13 @@ a:hover {
 }
 
 header {
-  background-color: var(--light);
+  /* background-color: var(--light); */
   /* position: sticky; */
   top: 0;
 }
 
 nav {
+  font-family: var(--secondary-font);
   width: 100%;
   margin-top: 10px;
   justify-content: center;
@@ -90,6 +106,10 @@ nav {
 
 nav a:hover {
   font-weight: bold;
+}
+
+.intro {
+  font-family: var(--primary-font);
 }
 
 .page-title {
@@ -109,7 +129,6 @@ nav a:hover {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.5rem 1.2rem;
-  width: 100%;
   margin: 5px 0;
   border-radius: var(--border-radius);
   color: var(--dark);
@@ -751,7 +770,8 @@ nav a:hover {
 
 /* BACKGROUND UTILS */
 .bg-primary {
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
+  background-image: url(./assets/bg-2.png);
 }
 
 .bg-secondary {
@@ -972,7 +992,7 @@ nav a:hover {
 @media screen and (min-width: 992px) {
   nav {
     width: auto;
-    justify-content: flex-end;
+    justify-content: space-around;
   }
 
   .page-title {

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Nav({ currentSection, setCurrentSection }) {
   return (
-    <nav className="flex-row">
+    <nav className="flex-row pt-4">
       <Link
         className={`ml-2 my-1 px-2 mx-5 py-1 text-dark ${
           currentSection === "about" && "nav-active"
@@ -12,7 +12,7 @@ function Nav({ currentSection, setCurrentSection }) {
         onClick={() => setCurrentSection("about")}
         to="/react-portfolio/about"
       >
-        About Me
+        ABOUT
       </Link>
       <Link
         className={`ml-2 my-1 px-2 mx-5 py-1 text-dark ${
@@ -22,7 +22,7 @@ function Nav({ currentSection, setCurrentSection }) {
         onClick={() => setCurrentSection("portfolio")}
         to="/react-portfolio/portfolio"
       >
-        Portfolio
+        PORTFOLIO
       </Link>
       <Link
         className={`ml-2 my-1 px-2 mx-5 py-1 text-dark ${
@@ -32,7 +32,7 @@ function Nav({ currentSection, setCurrentSection }) {
         onClick={() => setCurrentSection("contact")}
         to="/react-portfolio/contact"
       >
-        Contact
+        CONTACT
       </Link>
       <Link
         className={`ml-2 my-1 px-2 mx-5 py-1 text-dark ${
@@ -42,7 +42,7 @@ function Nav({ currentSection, setCurrentSection }) {
         onClick={() => setCurrentSection("resume")}
         to="/react-portfolio/resume"
       >
-        Resume
+        RESUME
       </Link>
     </nav>
   );

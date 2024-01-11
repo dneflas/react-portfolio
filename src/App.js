@@ -20,7 +20,7 @@ function App() {
 
   return (
     <Router>
-      <div>
+      <div className="bg-primary">
         <Header
           currentSection={currentSection}
           setCurrentSection={setCurrentSection}
