@@ -20,12 +20,12 @@ function App() {
 
   return (
     <Router>
-      <div className="bg-primary">
+      <div>
         <Header
           currentSection={currentSection}
           setCurrentSection={setCurrentSection}
         ></Header>
-        <main className="container">
+        <main className="container main-content">
           <Routes>
             <Route path="/react-portfolio">
               <Route path="/react-portfolio/about" element={<About />} />

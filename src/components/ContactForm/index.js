@@ -107,7 +107,7 @@ function ContactForm() {
           </div>
         </>
       ) : (
-        <div className="flex-row my-3 justify-center">
+        <div className="flex-row my-3 justify-center card">
           <form className="col-12 col-md-8" onSubmit={handleSubmit}>
             {errorMessage && (
               <div>
