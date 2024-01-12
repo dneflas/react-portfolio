@@ -23,9 +23,9 @@ function Footer() {
       icon: "fa-brands fa-linkedin",
     },
     {
-      name: "stackOverflow",
-      link: "https://stackoverflow.com/",
-      icon: "fa-brands fa-stack-overflow",
+      name: "email",
+      link: "mailto:debbieneflas@gmail.com",
+      icon: "fa-solid fa-envelope",
     },
   ]);
   return (
