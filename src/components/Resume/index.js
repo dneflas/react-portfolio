@@ -5,9 +5,12 @@ function Resume() {
   return (
     <section className="my-5">
       <h2>Resume</h2>
-      <a href={resume} download="Debbie_Neflas.pdf">
-        Download Resume
-      </a>
+      <button className="btn">
+        <a href={resume} download="Debbie_Neflas.pdf">
+          Download Resume
+        </a>
+      </button>
+
       <p className="my-5">
         Full-stack web developer, with recent Coding Bootcamp completion
         certificate. Experience building MERN stack applications. Highly

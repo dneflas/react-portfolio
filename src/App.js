@@ -20,12 +20,12 @@ function App() {
 
   return (
     <Router>
-      <div>
+      <div id="root">
         <Header
           currentSection={currentSection}
           setCurrentSection={setCurrentSection}
         ></Header>
-        <main className="container">
+        <main className="container main-content">
           <Routes>
             <Route path="/react-portfolio">
               <Route path="/react-portfolio/about" element={<About />} />
@@ -37,7 +37,7 @@ function App() {
           </Routes>
         </main>
 
-        <Footer></Footer>
+        <Footer className="footer"></Footer>
       </div>
     </Router>
   );

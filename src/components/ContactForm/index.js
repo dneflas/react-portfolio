@@ -19,12 +19,12 @@ function ContactForm() {
       icon: "fa-solid fa-envelope",
       text: "debbieneflas@gmail.com",
     },
-    {
-      name: "Phone",
-      link: "tel:+16263771363",
-      icon: "fa-solid fa-phone",
-      text: "626.377.1363",
-    },
+    // {
+    //   name: "Phone",
+    //   link: "tel:+16263771363",
+    //   icon: "fa-solid fa-phone",
+    //   text: "626.377.1363",
+    // },
   ]);
 
   function handleChange(event) {
@@ -107,7 +107,7 @@ function ContactForm() {
           </div>
         </>
       ) : (
-        <div className="flex-row my-3 justify-center">
+        <div className="flex-row my-3 justify-center card">
           <form className="col-12 col-md-8" onSubmit={handleSubmit}>
             {errorMessage && (
               <div>
