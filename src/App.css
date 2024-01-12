@@ -127,6 +127,20 @@ nav a:hover {
   color: var(--dark);
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
 .btn {
   font-family: var(--secondary-font);
   font-size: 1rem;

@@ -20,7 +20,7 @@ function App() {
 
   return (
     <Router>
-      <div>
+      <div id="root">
         <Header
           currentSection={currentSection}
           setCurrentSection={setCurrentSection}
@@ -37,7 +37,7 @@ function App() {
           </Routes>
         </main>
 
-        <Footer></Footer>
+        <Footer className="footer"></Footer>
       </div>
     </Router>
   );
