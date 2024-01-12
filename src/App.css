@@ -137,6 +137,8 @@ nav a:hover {
   color: var(--dark);
   outline: none;
   border-width: 1px;
+  border-style: outset;
+  border-color: buttonborder;
   background-color: var(--primary);
 }
 
