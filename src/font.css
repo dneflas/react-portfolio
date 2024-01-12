@@ -1,9 +1,0 @@
-@font-face {
-  font-family: "rocaTwoRegular";
-  src: local("rocaTwoRegular"), url("./assets/rocaTwoRegular.ttf") format("ttf");
-}
-
-@font-face {
-  font-family: "rocaOneBlack";
-  src: local("rocaOneBlack"), url("./assets/rocaOneBlack.ttf") format("ttf");
-}

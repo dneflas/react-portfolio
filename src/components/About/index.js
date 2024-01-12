@@ -8,19 +8,21 @@ function About() {
   return (
     <section className="text-light" id="about">
       <div className=" flex-row px-3 py-5 justify-space-around">
-        <div className="my-auto px-auto col-7">
+        <div className="my-auto px-auto col-5">
           <h1 className="intro">Hi, I'm Debbie...</h1>
-          <h5>A full-stack web developer based in Culver City, CA</h5>
-          <button
-            onClick={() => setShowMore(true)}
-            className={`btn ${showMore === true && "display-none"}`}
-          >
-            Read More
-          </button>
+          <h5>A full-stack engineer based in Culver City, CA</h5>
+          <div className="text-center">
+            <button
+              onClick={() => setShowMore(true)}
+              className={`btn my-5 ${showMore === true && "display-none"}`}
+            >
+              Read More
+            </button>
+          </div>
         </div>
         <img
           src={profilePic}
-          className="my-4 col-4"
+          className="my-4 col-10 col-md-4"
           alt="headshot"
           width="100px"
         />
@@ -28,7 +30,7 @@ function About() {
 
       <div className={`px-3 ${showMore === false && "display-none"}`}>
         <h2 className="py-2">About Me</h2>
-        <p className="" id="about-text">
+        <p className="mb-2" id="about-text">
           {/* A full-stack web developer with a recently earned certificate in
         full-stack development from UCLA Extensions. I am Javascript-fluent with
         developed skills in Node.js, React.js, and mobile-first responsive
