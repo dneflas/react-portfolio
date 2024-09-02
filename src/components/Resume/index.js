@@ -1,15 +1,43 @@
-import React from "react";
-import resume from "../../assets/resume.pdf";
+import React, { useState } from "react";
+// import resume from "../../assets/resume.pdf";
 
 function Resume() {
+  const [resumeLinks] = useState([
+    {
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/in/debbieneflas/",
+    },
+    {
+      name: "GitHub",
+      link: "https://github.com/dneflas",
+    },
+    {
+      name: "Email",
+      link: "mailto:debbieneflas@gmail.com",
+    },
+  ]);
   return (
     <section className="my-5">
       <h2>Resume</h2>
-      <button className="btn">
+      {/* <button className="btn">
         <a href={resume} download="Debbie_Neflas.pdf">
           Download Resume
         </a>
-      </button>
+      </button> */}
+
+      <div className="flex-row justify-center mt-3 mb-5">
+        {resumeLinks.map((item) => (
+          <a
+            className="btn px-5 mx-5"
+            key={item.name}
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {item.name}
+          </a>
+        ))}
+      </div>
 
       <p className="my-5">
         Full-stack web developer, with recent Coding Bootcamp completion
