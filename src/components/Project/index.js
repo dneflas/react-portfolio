@@ -4,6 +4,15 @@ function Project() {
   const [isProjectHover, setIsProjectHover] = useState();
   const [project] = useState([
     {
+      title: "Hello Bubs",
+      languages: "React, Node.js, CSS",
+      description:
+        "A React single-page application for information and signup, built for a startup application for baby gear resale.",
+      repo_link: "https://github.com/dneflas/bgx-web",
+      deployed_link: "https://dneflas.github.io/bgx-web/",
+      image: "6.png",
+    },
+    {
       title: "DEJA Imp",
       languages:
         "React, GraphQL, Express, Node.js, JSX, CSS, MongoDB, Mongoose ODM, JSON Web Tokens, Apollo Client, Bcrypt, Faker-js ",
