@@ -7,7 +7,7 @@ function Project() {
       title: "Hello Bubs",
       languages: "React, Node.js, CSS",
       description:
-        "A React single-page application for information and signup, built for a startup application for baby gear resale.",
+        "A responsive React landing page for a baby gear resale platform, featuring a simple signup process and key service details, built with a focus on performance and mobile optimization.",
       repo_link: "https://github.com/dneflas/bgx-web",
       deployed_link: "https://dneflas.github.io/bgx-web/",
       image: "6.png",
@@ -17,7 +17,7 @@ function Project() {
       languages:
         "React, GraphQL, Express, Node.js, JSX, CSS, MongoDB, Mongoose ODM, JSON Web Tokens, Apollo Client, Bcrypt, Faker-js ",
       description:
-        "A single-page MERN Stack application for inventory management, built for a local business.",
+        "A MERN stack single-page application for inventory management, designed for a local business with real-time updates and streamlined data management.",
       repo_link: "https://github.com/edellenator/Deja-imp",
       deployed_link: "https://deja-imp.herokuapp.com/",
       image: "5.png",
@@ -27,7 +27,7 @@ function Project() {
       languages:
         "Javascript, Node.js, MySQL, Express Package, Sequelize Package, Handlebars, Express Sessions, Connect Session Sequelize, Dotenv package, Bcrypt Package, Casual Package",
       description:
-        "a full-stack application for Artist Nation to comprise and manage a press list. (username: guest, password: P@ssword123) ",
+        "A full-stack application for Artist Nation to manage a press list, featuring secure user access and efficient data organization. (Login: guest / P@ssword123)",
       repo_link: "https://github.com/sammylwolfson/artistnation-presslist",
       deployed_link: "https://agile-refuge-70111.herokuapp.com/",
       image: "0.png",
@@ -37,7 +37,7 @@ function Project() {
       languages:
         "HTML, CSS, Javascript, Foundation Framework, Google Icons, Cat Fact API, The Cat API",
       description:
-        "A front end application that allows users to get and favorite random photos and facts about cats.",
+        "A front-end application that lets users discover and favorite random cat photos and facts, providing a fun and interactive experience.",
       repo_link: "https://github.com/sammylwolfson/cat-me",
       deployed_link: "https://sammylwolfson.github.io/cat-me/",
       image: "1.png",
@@ -47,7 +47,7 @@ function Project() {
       languages:
         "HTML, CSS, Javascript, Bootstrap, OpenWeather One Call API 1.0",
       description:
-        "An application that allows users to input a city and see the current weather conditions, along with a 5-day forecast.",
+        "An application that displays current weather conditions and a 5-day forecast based on user-inputted cities.",
       repo_link: "https://github.com/dneflas/weather-dashboard",
       deployed_link: "https://dneflas.github.io/weather-dashboard/",
       image: "2.png",
@@ -56,7 +56,7 @@ function Project() {
       title: "Code Quiz",
       languages: "HTML, CSS, Javascript",
       description:
-        "A timed quiz application that stores high scores, featuring dynamically updated HTML.",
+        "A timed quiz application that stores high scores, featuring dynamically updated HTML for an interactive user experience.",
       repo_link: "https://github.com/dneflas/code-quiz",
       deployed_link: "https://dneflas.github.io/code-quiz/",
       image: "3.png",
@@ -66,7 +66,7 @@ function Project() {
       languages:
         "Node.js, Express, MySQL, Sequelize, Handlebars, Express Sessions, Connect Session Sequelize, Dotenv, Bcrypt, Casual",
       description:
-        "A full-stack CMS-style blog that allows users to read, write, edit blog posts and leave comments.",
+        "A full-stack CMS-style blog that enables users to read, write, edit posts, and leave comments, fostering user engagement and content management.",
       repo_link: "https://github.com/dneflas/the-tech-blog",
       deployed_link: "https://agile-inlet-69846.herokuapp.com/",
       image: "4.png",
