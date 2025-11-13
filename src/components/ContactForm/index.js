@@ -17,13 +17,13 @@ function ContactForm() {
       name: "Email",
       link: "mailto:debbieneflas@gmail.com",
       icon: "fa-solid fa-envelope",
-      text: "debbieneflas@gmail.com",
+      text: "debbieneflasdev@gmail.com",
     },
     // {
     //   name: "Phone",
-    //   link: "tel:+16263771363",
+    //   link: "tel:+14242092856",
     //   icon: "fa-solid fa-phone",
-    //   text: "626.377.1363",
+    //   text: "424.209.2586",
     // },
   ]);
 

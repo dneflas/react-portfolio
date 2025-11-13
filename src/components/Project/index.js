@@ -8,6 +8,9 @@ function Project() {
       languages: "HTML, CSS, Javascript, PHP",
       description:
         "A responsive, custom-built website for an interpreting service, featuring dynamic contact forms, optimized navigation, and an accessible layout to enhance user experience and engagement.",
+      repo_link: "https://github.com/dneflas/VLS",
+      deployed_link: "https://www.veralanguageservices.com/",
+      image: "7.png",
     },
     {
       title: "Hello Bubs",
