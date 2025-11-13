@@ -4,6 +4,12 @@ function Project() {
   const [isProjectHover, setIsProjectHover] = useState();
   const [project] = useState([
     {
+      title: "Vera Language Services",
+      languages: "HTML, CSS, Javascript, PHP",
+      description:
+        "A responsive, custom-built website for an interpreting service, featuring dynamic contact forms, optimized navigation, and an accessible layout to enhance user experience and engagement.",
+    },
+    {
       title: "Hello Bubs",
       languages: "React, Node.js, CSS",
       description:
