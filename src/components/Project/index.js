@@ -42,6 +42,16 @@ function Project() {
       image: "0.png",
     },
     {
+      title: "The Tech Blog",
+      languages:
+        "Node.js, Express, MySQL, Sequelize, Handlebars, Docker, Docker Compose, GitHub Actions",
+      description:
+        "A full-stack CMS-style blog with user authentication and CRUD functionality, enhanced with SRE practices including containerization, multi-service orchestration, and CI automation with health checks.",
+      repo_link: "https://github.com/dneflas/the-tech-blog",
+      deployed_link: "https://agile-inlet-69846.herokuapp.com/",
+      image: "4.png",
+    },
+    {
       title: "CAT ME",
       languages:
         "HTML, CSS, Javascript, Foundation Framework, Google Icons, Cat Fact API, The Cat API",
@@ -69,16 +79,6 @@ function Project() {
       repo_link: "https://github.com/dneflas/code-quiz",
       deployed_link: "https://dneflas.github.io/code-quiz/",
       image: "3.png",
-    },
-    {
-      title: "The Tech Blog",
-      languages:
-        "Node.js, Express, MySQL, Sequelize, Handlebars, Express Sessions, Connect Session Sequelize, Dotenv, Bcrypt, Casual",
-      description:
-        "A full-stack CMS-style blog that enables users to read, write, edit posts, and leave comments, fostering user engagement and content management.",
-      repo_link: "https://github.com/dneflas/the-tech-blog",
-      deployed_link: "https://agile-inlet-69846.herokuapp.com/",
-      image: "4.png",
     },
   ]);
   return (
