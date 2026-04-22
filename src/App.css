@@ -193,6 +193,17 @@ nav a:hover {
   font-size: 2rem;
 }
 
+.image-wrapper img {
+  border-radius: 50%;
+  border: 1px solid var(--primary);
+  padding: 40px;
+}
+
+#about {
+  min-height: 100vh;
+  align-self: center;
+}
+
 .projects {
   min-height: 400px;
   border: 1px solid var(--secondary);

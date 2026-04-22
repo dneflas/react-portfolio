@@ -4,33 +4,35 @@ import profilePic from "../../assets/profile.png";
 
 function About() {
   return (
-    <section className="" id="about">
-      <div className=" flex-row px-3 py-5 justify-space-around">
-        <div className="my-auto px-auto col-5">
-          <p>Hi, I'm Debbie </p>
-          <h1>
-            <span>Full</span> Stack <br />
-            Developer
-          </h1>
-          <p>
-            I'm a full-stack developer based in Culver City. I help small
-            businesses fix, improve, and modernize their websites, and build
-            simple custom web apps when needed
-          </p>
-          <div>
-            <button className="btn primary mr-2">Get In Touch</button>
-            <button className="btn secondary">Browse Projects</button>
+    <>
+      <section className="" id="about">
+        <div className=" flex-row px-3 py-5 justify-space-between">
+          <div className="my-auto px-auto col-6">
+            <p>Hi, I'm Debbie </p>
+            <h1>
+              <span>Full</span> Stack <br />
+              Developer
+            </h1>
+            <p>
+              I'm a full-stack developer based in Culver City. I help small
+              businesses fix, improve, and modernize their websites, and build
+              simple custom web apps when needed
+            </p>
+            <div>
+              <button className="btn primary mr-2">Get In Touch</button>
+              <button className="btn secondary">Browse Projects</button>
+            </div>
+          </div>
+          <div className="image-wrapper ">
+            <img
+              src={profilePic}
+              className="my-4 col-10 col-md-4 "
+              alt="headshot"
+            />
           </div>
         </div>
-        <img
-          src={profilePic}
-          className="my-4 col-10 col-md-4"
-          alt="headshot"
-          width="100px"
-        />
-      </div>
 
-      {/* <div className={`px-3 ${showMore === false && "display-none"}`}>
+        {/* <div className={`px-3 ${showMore === false && "display-none"}`}>
         <h2 className="py-2">About Me</h2>
         <p className="mb-2" id="about-text">
 
@@ -56,7 +58,54 @@ function About() {
           your team, I'm excited to be considered for the opportunity.
         </p>
       </div> */}
-    </section>
+      </section>
+      <section id="project-preview">
+        <h2>Projects</h2>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <div className="flex-row justify-space-around">
+          <div className="col col-md-3">
+            <h3>Frontend</h3>
+            <ul>
+              <li>Javascript</li>
+              <li>ReactJS</li>
+              <li>HTML</li>
+              <li>CSS3</li>
+            </ul>
+          </div>
+          <div className="col col-md-3">
+            <h3>Backend</h3>
+            <ul>
+              <li>NodeJS</li>
+              <li>MongoDB</li>
+              <li>MySQL</li>
+              <li>ExpressJS</li>
+            </ul>
+          </div>
+          <div className="col col-md-3">
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>Technical Troubleshooting</li>
+              <li>Collaboration</li>
+              <li>Problem Solving</li>
+              <li>Commitment</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>My Story</h2>
+        <p>
+          I’m a developer with a background in customer service and business
+          operations, which means I don’t just focus on code. I focus on people.
+          I enjoy helping clients fix, improve, and build websites that support
+          their goals. Whether it’s troubleshooting an issue or creating
+          something new, I aim to deliver solutions that are clear, reliable,
+          and easy to use.
+        </p>
+      </section>
+    </>
   );
 }
 
