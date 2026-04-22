@@ -3,21 +3,23 @@ import React, { useState } from "react";
 import profilePic from "../../assets/profile.png";
 
 function About() {
-  const [showMore, setShowMore] = useState(false);
-
   return (
-    <section className="text-light" id="about">
+    <section className="" id="about">
       <div className=" flex-row px-3 py-5 justify-space-around">
         <div className="my-auto px-auto col-5">
-          <h1 className="intro">Hi, I'm Debbie...</h1>
-          <h5>A full-stack engineer based in Culver City, CA</h5>
-          <div className="text-center">
-            <button
-              onClick={() => setShowMore(true)}
-              className={`btn my-5 ${showMore === true && "display-none"}`}
-            >
-              Read More
-            </button>
+          <p>Hi, I'm Debbie </p>
+          <h1>
+            <span>Full</span> Stack <br />
+            Developer
+          </h1>
+          <p>
+            I'm a full-stack developer based in Culver City. I help small
+            businesses fix, improve, and modernize their websites, and build
+            simple custom web apps when needed
+          </p>
+          <div>
+            <button className="btn primary mr-2">Get In Touch</button>
+            <button className="btn secondary">Browse Projects</button>
           </div>
         </div>
         <img
@@ -28,18 +30,10 @@ function About() {
         />
       </div>
 
-      <div className={`px-3 ${showMore === false && "display-none"}`}>
+      {/* <div className={`px-3 ${showMore === false && "display-none"}`}>
         <h2 className="py-2">About Me</h2>
         <p className="mb-2" id="about-text">
-          {/* A full-stack web developer with a recently earned certificate in
-        full-stack development from UCLA Extensions. I am Javascript-fluent with
-        developed skills in Node.js, React.js, and mobile-first responsive
-        design, with an eye for catching details. I have experience building
-        single-page MERN stack applications. I’ve worked on teams of four to
-        develop an inventory management application and a press-list management
-        application for local businesses. I am looking forward to joining a
-        quality-driven team to approach programming challenges from different
-        angles, and to engage in meaningful development. */}
+
           I am a dedicated and passionate full-stack web developer, equipped
           with a recent certificate in full-stack development from UCLA
           Extensions. My journey in the world of web development has been driven
@@ -61,7 +55,7 @@ function About() {
           If you're seeking a dedicated and skilled full-stack developer to join
           your team, I'm excited to be considered for the opportunity.
         </p>
-      </div>
+      </div> */}
     </section>
   );
 }
