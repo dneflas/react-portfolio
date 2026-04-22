@@ -89,10 +89,15 @@ p {
 
 a {
   text-decoration: none;
+  color: var(--dark);
 }
 
 a:hover {
   font-weight: bold;
+}
+
+a:visited {
+  color: var(--dark);
 }
 
 header {
@@ -103,9 +108,14 @@ header {
 
 nav {
   font-family: var(--secondary-font);
+  color: var(--dark);
   width: 100%;
   margin-top: 10px;
   justify-content: center;
+}
+
+nav a {
+  margin: 1rem;
 }
 
 nav a:hover {
@@ -1030,7 +1040,6 @@ nav a:hover {
 @media screen and (min-width: 992px) {
   nav {
     width: auto;
-    justify-content: space-around;
   }
 
   .page-title {

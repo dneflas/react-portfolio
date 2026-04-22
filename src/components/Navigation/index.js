@@ -5,9 +5,7 @@ function Nav({ currentSection, setCurrentSection }) {
   return (
     <nav className="flex-row pt-4">
       <Link
-        className={`ml-2 my-1 px-2 mx-5 py-1 text-dark ${
-          currentSection === "about" && "nav-active"
-        }`}
+        className={`${currentSection === "about" && "nav-active"}`}
         data-testid="about"
         onClick={() => setCurrentSection("about")}
         to="/react-portfolio/about"
@@ -15,9 +13,7 @@ function Nav({ currentSection, setCurrentSection }) {
         ABOUT
       </Link>
       <Link
-        className={`ml-2 my-1 px-2 mx-5 py-1 text-dark ${
-          currentSection === "portfolio" && "nav-active"
-        }`}
+        className={` ${currentSection === "portfolio" && "nav-active"}`}
         data-testid="portfolio"
         onClick={() => setCurrentSection("portfolio")}
         to="/react-portfolio/portfolio"
@@ -25,9 +21,7 @@ function Nav({ currentSection, setCurrentSection }) {
         PORTFOLIO
       </Link>
       <Link
-        className={`ml-2 my-1 px-2 mx-5 py-1 text-dark ${
-          currentSection === "contact" && "nav-active"
-        }`}
+        className={` ${currentSection === "contact" && "nav-active"}`}
         data-testid="contact"
         onClick={() => setCurrentSection("contact")}
         to="/react-portfolio/contact"
@@ -35,9 +29,7 @@ function Nav({ currentSection, setCurrentSection }) {
         CONTACT
       </Link>
       <Link
-        className={`ml-2 my-1 px-2 mx-5 py-1 text-dark ${
-          currentSection === "resume" && "nav-active"
-        }`}
+        className={` ${currentSection === "resume" && "nav-active"}`}
         data-testid="resume"
         onClick={() => setCurrentSection("resume")}
         to="/react-portfolio/resume"
