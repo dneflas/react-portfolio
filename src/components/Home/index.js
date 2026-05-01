@@ -9,7 +9,7 @@ function Home() {
       <section className="" id="about">
         <div className="hero flex-row px-3 py-5 justify-space-around">
           <div className="my-auto px-auto col-6">
-            <p>Hi, I'm Debbie </p>
+            <p>Hi, I'm Debbie... </p>
             <h1>
               <span>Full</span> Stack <br />
               Developer

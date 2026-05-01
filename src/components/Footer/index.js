@@ -24,24 +24,31 @@ function Footer() {
     },
     {
       name: "email",
-      link: "mailto:debbieneflas@gmail.com",
+      link: "mailto:debbieneflasdev@gmail.com",
       icon: "fa-solid fa-envelope",
     },
   ]);
   return (
-    <div className="flex-row justify-center mt-3 mb-5 container">
-      {contactLinks.map((link) => (
-        <div className="col-2 text-center" key={link.name}>
-          <a
-            href={link.link}
-            className="ml-2 my-1 px-2 py-1 text-dark icons"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className={link.icon}></i>
-          </a>
-        </div>
-      ))}
+    <div className="flex-row justify-space-between mt-3 mb-5 container">
+      <div>
+        <h4>Interested in working together?</h4>
+        <button className="btn primary mr-2">Get In Touch</button>
+        <button className="btn secondary">Browse Projects</button>
+      </div>
+      <div className="flex-row align-end">
+        {contactLinks.map((link) => (
+          <div className="col-2 text-center" key={link.name}>
+            <a
+              href={link.link}
+              className="ml-2 my-1 px-2 py-1 text-dark icons"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className={link.icon}></i>
+            </a>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
