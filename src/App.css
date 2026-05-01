@@ -63,7 +63,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 2.75rem;
 }
 
 h3 {
@@ -203,6 +203,14 @@ nav a:hover {
   min-height: 90vh;
   align-self: center;
 }
+
+/* .hero {
+  align-self: center;
+  background-color: var(--light);
+  border: 2px solid var(--dark);
+  border-radius: 16px;
+  margin: var(--spacing-five);
+} */
 
 .projects {
   min-height: 400px;

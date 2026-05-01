@@ -6,12 +6,18 @@ import img3 from "../../assets/3.png";
 import img4 from "../../assets/4.png";
 import img5 from "../../assets/5.png";
 import img6 from "../../assets/6.png";
+import img7 from "../../assets/7.png";
 
 const projects = [
   {
     title: "Vera Language Services",
     desc: "Description here",
-    image: img0,
+    image: img7,
+  },
+  {
+    title: "CAT ME",
+    desc: "Description here",
+    image: img1,
   },
   { title: "Weather Dashboard", desc: "Description here", image: img2 },
   {

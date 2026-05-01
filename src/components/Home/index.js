@@ -7,7 +7,7 @@ function Home() {
   return (
     <>
       <section className="" id="about">
-        <div className=" flex-row px-3 py-5 justify-space-around">
+        <div className="hero flex-row px-3 py-5 justify-space-around">
           <div className="my-auto px-auto col-6">
             <p>Hi, I'm Debbie </p>
             <h1>
@@ -60,13 +60,20 @@ function Home() {
         </p>
       </div> */}
       </section>
-      <section id="project-preview">
-        <h2>Projects</h2>
+      <section id="project-preview" className="mb-5">
+        <h2>
+          Projects{" "}
+          <span>
+            <a href="./portfolio">
+              <i class="fa-solid fa-circle-chevron-right"></i>
+            </a>
+          </span>
+        </h2>
         <div className="full-bleed">
           <ProjectCarousel></ProjectCarousel>
         </div>
       </section>
-      <section id="skills">
+      <section id="skills" className="mb-5">
         <h2>Skills</h2>
         <div className="flex-row justify-space-around">
           <div className="col col-md-3">
@@ -98,7 +105,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section>
+      <section className="mb-5">
         <h2>My Story</h2>
         <p>
           I’m a developer with a background in customer service and business
