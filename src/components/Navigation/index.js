@@ -5,12 +5,12 @@ function Nav({ currentSection, setCurrentSection }) {
   return (
     <nav className="flex-row pt-4">
       <Link
-        className={`${currentSection === "about" && "nav-active"}`}
+        className={`${currentSection === "home" && "nav-active"}`}
         data-testid="about"
-        onClick={() => setCurrentSection("about")}
-        to="/react-portfolio/about"
+        onClick={() => setCurrentSection("home")}
+        to="/react-portfolio/home"
       >
-        ABOUT
+        HOME
       </Link>
       <Link
         className={` ${currentSection === "portfolio" && "nav-active"}`}

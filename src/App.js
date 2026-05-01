@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
-import About from "./components/About";
+import Home from "./components/Home";
 import Portfolio from "./components/Portfolio";
 import ContactForm from "./components/ContactForm";
 import Resume from "./components/Resume";
@@ -28,8 +28,8 @@ function App() {
         <main className="container main-content">
           <Routes>
             <Route path="/react-portfolio">
-              <Route path="/react-portfolio/about" element={<About />} />
-              <Route path="" element={<About />} />
+              <Route path="/react-portfolio/home" element={<Home />} />
+              <Route path="" element={<Home />} />
             </Route>
             <Route path="/react-portfolio/portfolio" element={<Portfolio />} />
             <Route path="/react-portfolio/contact" element={<ContactForm />} />

@@ -3,11 +3,11 @@ import React, { useState } from "react";
 import profilePic from "../../assets/profile.png";
 import ProjectCarousel from "../ProjectCarousel";
 
-function About() {
+function Home() {
   return (
     <>
       <section className="" id="about">
-        <div className=" flex-row px-3 py-5 justify-space-between">
+        <div className=" flex-row px-3 py-5 justify-space-around">
           <div className="my-auto px-auto col-6">
             <p>Hi, I'm Debbie </p>
             <h1>
@@ -17,7 +17,7 @@ function About() {
             <p>
               I'm a full-stack developer based in Culver City. I help small
               businesses fix, improve, and modernize their websites, and build
-              simple custom web apps when needed
+              simple custom web apps when needed.
             </p>
             <div>
               <button className="btn primary mr-2">Get In Touch</button>
@@ -113,4 +113,4 @@ function About() {
   );
 }
 
-export default About;
+export default Home;
