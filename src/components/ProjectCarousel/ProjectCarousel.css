@@ -1,0 +1,63 @@
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  animation: scroll 60s linear infinite;
+}
+
+.carousel:hover .carousel-track {
+  animation-play-state: paused;
+}
+
+.carousel-card {
+  min-width: 500px;
+  height: 400px;
+  padding: 1rem;
+  flex-shrink: 0;
+  margin: 1rem;
+}
+
+.carousel-card:hover {
+  transform: translateY(-8px);
+  transition: 0.3s ease;
+}
+
+.carousel-img {
+  width: 450px;
+}
+
+@media (max-width: 768px) {
+  .carousel-card {
+    min-width: 80%;
+  }
+
+  .carousel-track {
+    animation: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .carousel-card {
+    scroll-snap-align: start;
+    min-width: auto;
+  }
+  .carousel-img {
+    width: 300px;
+  }
+}
+
+/* Infinite scrolling animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

@@ -110,7 +110,7 @@ function Project() {
               <p>{project.description}</p>
               <a
                 href={project.repo_link}
-                className="btn w-50 text-center mt-auto"
+                className="btn primary w-50 text-center mt-auto"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -118,7 +118,7 @@ function Project() {
               </a>
               <a
                 href={project.deployed_link}
-                className="btn w-50 mt-0 text-center"
+                className="btn primary w-50 mt-0 text-center"
                 target="_blank"
                 rel="noopener noreferrer"
               >

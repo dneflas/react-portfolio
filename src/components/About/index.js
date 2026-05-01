@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import profilePic from "../../assets/profile.png";
+import ProjectCarousel from "../ProjectCarousel";
 
 function About() {
   return (
@@ -61,6 +62,9 @@ function About() {
       </section>
       <section id="project-preview">
         <h2>Projects</h2>
+        <div className="full-bleed">
+          <ProjectCarousel></ProjectCarousel>
+        </div>
       </section>
       <section id="skills">
         <h2>Skills</h2>

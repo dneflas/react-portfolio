@@ -248,6 +248,7 @@ nav a:hover {
   margin: 10%;
   padding: 5% 0%;
   border: 2px solid #000;
+  border-radius: 16px;
   box-shadow:
     20px 20px var(--secondary),
     20px 20px 0px 2px var(--dark),
@@ -298,6 +299,11 @@ nav a:hover {
 
 .container-fluid {
   width: 92%;
+}
+
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
 }
 
 /* DISPLAY */
