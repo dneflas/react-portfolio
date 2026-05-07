@@ -291,9 +291,10 @@ nav a:hover {
   width: 100%;
   padding: 1%;
   margin: 5px 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border: 1px solid var(--dark);
   border-radius: var(--border-radius);
+  font-family: inherit;
 }
 
 /* LAYOUT */
